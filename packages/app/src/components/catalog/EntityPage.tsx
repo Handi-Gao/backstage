@@ -154,6 +154,14 @@ import {
   ReportIssue,
 } from '@backstage/plugin-techdocs-module-addons-contrib';
 import { EntityCostInsightsContent } from '@backstage/plugin-cost-insights';
+import {
+  EntityOpsgenieAlertsCard,
+  isOpsgenieAvailable,
+} from '@k-phoen/backstage-plugin-opsgenie';
+import {
+  EntityOpsgenieOnCallListCard,
+  isOpsgenieOnCallListAvailable,
+} from '@k-phoen/backstage-plugin-opsgenie';
 
 const customEntityFilterKind = ['Component', 'API', 'System'];
 
@@ -343,6 +351,12 @@ const overviewContent = (
     <Grid item md={6} xs={12}>
       <EntityCatalogGraphCard variant="gridItem" height={400} />
     </Grid>
+
+    <EntitySwitch>
+      <EntitySwitch.Case if={isOpsgenieAvailable}>
+        <EntityOpsgenieAlertsCard title="OpsGenie — Alerts" />
+      </EntitySwitch.Case>
+    </EntitySwitch>
 
     <EntitySwitch>
       <EntitySwitch.Case if={isPagerDutyAvailable}>

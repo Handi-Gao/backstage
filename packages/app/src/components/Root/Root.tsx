@@ -61,6 +61,7 @@ import DomainIcon from '@material-ui/icons/Apartment';
 import ResourceIcon from '@material-ui/icons/Work';
 import SystemIcon from '@material-ui/icons/Category';
 import UserIcon from '@material-ui/icons/Person';
+import ReportProblemIcon from '@material-ui/icons/ReportProblem';
 
 const useSidebarLogoStyles = makeStyles({
   root: {
@@ -153,6 +154,7 @@ export const Root = ({ children }: PropsWithChildren<{}>) => (
         <SidebarItem icon={PlaylistPlayIcon} to="playlist" text="Playlists" />
         <SidebarItem icon={LayersIcon} to="explore" text="Explore" />
         <SidebarItem icon={CreateComponentIcon} to="create" text="Create..." />
+        <SidebarItem icon={ReportProblemIcon} to="opsgenie" text="Incidents" />
         {/* End global nav */}
         <SidebarDivider />
         <SidebarScrollWrapper>

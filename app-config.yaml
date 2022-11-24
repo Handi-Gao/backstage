@@ -117,6 +117,16 @@ proxy:
     target: https://your.dynatrace.instance.com/api/v2
     headers:
       Authorization: 'Api-Token ${DYNATRACE_ACCESS_TOKEN}'
+      
+  '/opsgenie/api':
+    # Use "target: https://api.eu.opsgenie.com" for an EU account
+    target: https://api.opsgenie.com
+    headers:
+      Authorization: GenieKey ${OPSGENIE_API_KEY}
+      
+opsgenie:
+  # Use "domain: https://myorganization.app.eu.opsgenie.com/" for an EU account
+  domain: https://pcconcall.app.opsgenie.com/
 
 organization:
   name: My Company

@@ -10363,6 +10363,34 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@k-phoen/backstage-plugin-opsgenie@npm:^0.6.3":
+  version: 0.6.3
+  resolution: "@k-phoen/backstage-plugin-opsgenie@npm:0.6.3"
+  dependencies:
+    "@backstage/catalog-model": ^1.1.3
+    "@backstage/core-components": ^0.12.0
+    "@backstage/core-plugin-api": ^1.1.0
+    "@backstage/plugin-catalog-react": ^1.2.1
+    "@backstage/theme": ^0.2.16
+    "@material-ui/core": ^4.12.2
+    "@material-ui/icons": ^4.9.1
+    "@material-ui/lab": 4.0.0-alpha.45
+    dom-to-image: ^2.6.0
+    history: ^5.0.0
+    js-file-download: ^0.4.12
+    moment: ^2.29.1
+    react-use: ^17.2.4
+    recharts: ^2.1.6
+    string-to-color: ^2.2.2
+  peerDependencies:
+    react: ^16.13.1 || ^17.0.0
+    react-dom: ^16.13.1 || ^17.0.0
+    react-router: 6.0.0-beta.0 || ^6.3.0
+    react-router-dom: 6.0.0-beta.0 || ^6.3.0
+  checksum: ecf9f4553840c146aed5b9b8e3f3bffff8c0d1127f5d446d4eb21d436217d20bead77eed4170d17e8ffeecb9a5778ac2f127d8e244480d3168883b39c53942d5
+  languageName: node
+  linkType: hard
+
 "@keyv/memcache@npm:^1.3.5":
   version: 1.3.5
   resolution: "@keyv/memcache@npm:1.3.5"
@@ -14295,13 +14323,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/resize-observer-browser@npm:^0.1.6":
-  version: 0.1.7
-  resolution: "@types/resize-observer-browser@npm:0.1.7"
-  checksum: 0377eaac8bb7a17b983b49a156006032380b459bfebefc54a5aa2f7f8a9786d2b60723e8837c61ef733330b478f4f26293e9edbdc8006238e4f80c878c56c988
-  languageName: node
-  linkType: hard
-
 "@types/resolve@npm:1.17.1":
   version: 1.17.1
   resolution: "@types/resolve@npm:1.17.1"
@@ -18014,6 +18035,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"colornames@npm:^1.1.1":
+  version: 1.1.1
+  resolution: "colornames@npm:1.1.1"
+  checksum: a97df66bde2a0efb592870f790bae2ffcbf2f9e30c0064783a2941be6713f0ac2acfa3bf1baf70bb423d99526f4fc761bf311fac94aa18ed642d77932352f864
+  languageName: node
+  linkType: hard
+
 "colors@npm:1.0.3":
   version: 1.0.3
   resolution: "colors@npm:1.0.3"
@@ -19941,6 +19969,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"dom-to-image@npm:^2.6.0":
+  version: 2.6.0
+  resolution: "dom-to-image@npm:2.6.0"
+  checksum: 0d1f450b776d36f3ec982783d2a3898baaa3697f135ed0a9c70085db6bc5ac6def02f5ed7affc6acb92ef4fb3248905fabec915fed541994383d317260f784a2
+  languageName: node
+  linkType: hard
+
 "dom-walk@npm:^0.1.0":
   version: 0.1.1
   resolution: "dom-walk@npm:0.1.1"
@@ -21330,6 +21365,7 @@ __metadata:
     "@backstage/test-utils": "workspace:^"
     "@backstage/theme": "workspace:^"
     "@internal/plugin-catalog-customized": "workspace:^"
+    "@k-phoen/backstage-plugin-opsgenie": ^0.6.3
     "@material-ui/core": ^4.12.2
     "@material-ui/icons": ^4.9.1
     "@material-ui/lab": 4.0.0-alpha.57
@@ -23429,6 +23465,13 @@ __metadata:
   version: 6.0.0
   resolution: "helmet@npm:6.0.0"
   checksum: 0dd89d5b77c5334e815f5d29376ca7af0ad1007136890f497be3455d9ed9734e7203e13d9931e29e4d2ced1c632c52440f16d2a02e8835fd8b8706a12052faad
+  languageName: node
+  linkType: hard
+
+"hex-rgb@npm:^4.1.0":
+  version: 4.3.0
+  resolution: "hex-rgb@npm:4.3.0"
+  checksum: e654648db8647446f0111c68690d9b340eb192a93c8b2c6789a2b8deb5c20e757515ae209c5ae67074acfddf8575f9fc645d4ffaa0596d859457b08e180d791d
   languageName: node
   linkType: hard
 
@@ -27059,6 +27102,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"lodash.padend@npm:^4.6.1":
+  version: 4.6.1
+  resolution: "lodash.padend@npm:4.6.1"
+  checksum: c2e6e789debf83b98f5c085305cdcfff1067e7a31bda2a110fd765d3c11a99edfbeef570d9ef737ab3212006bdb8114e77622e518c18c1fce52b8fdfd9dab685
+  languageName: node
+  linkType: hard
+
 "lodash.sortby@npm:^4.7.0":
   version: 4.7.0
   resolution: "lodash.sortby@npm:4.7.0"
@@ -27073,6 +27123,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"lodash.trimstart@npm:^4.5.1":
+  version: 4.5.1
+  resolution: "lodash.trimstart@npm:4.5.1"
+  checksum: 4b2d37505ac15f501f4f2378928455a40e858fa56c924494dbc21d5d828c55e821cda8543f25fe265e3d552937e915264a2567ba9291a172262c24c33e9ad6b0
+  languageName: node
+  linkType: hard
+
 "lodash.union@npm:^4.6.0":
   version: 4.6.0
   resolution: "lodash.union@npm:4.6.0"
@@ -27084,6 +27141,13 @@ __metadata:
   version: 4.5.0
   resolution: "lodash.uniq@npm:4.5.0"
   checksum: a4779b57a8d0f3c441af13d9afe7ecff22dd1b8ce1129849f71d9bbc8e8ee4e46dfb4b7c28f7ad3d67481edd6e51126e4e2a6ee276e25906d10f7140187c392d
+  languageName: node
+  linkType: hard
+
+"lodash.words@npm:^4.2.0":
+  version: 4.2.0
+  resolution: "lodash.words@npm:4.2.0"
+  checksum: 287d617ffa3fb453b6925620f04fa195c801590833fd9336c7e80c36ce105d06613ad0455ad368738fb40b36fd5f635b85f837fc7f584b73e03365482acd6e7a
   languageName: node
   linkType: hard
 
@@ -32136,17 +32200,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-resize-detector@npm:^6.6.3":
-  version: 6.7.8
-  resolution: "react-resize-detector@npm:6.7.8"
+"react-resize-detector@npm:^7.1.2":
+  version: 7.1.2
+  resolution: "react-resize-detector@npm:7.1.2"
   dependencies:
-    "@types/resize-observer-browser": ^0.1.6
     lodash: ^4.17.21
-    resize-observer-polyfill: ^1.5.1
   peerDependencies:
-    react: ^16.0.0 || ^17.0.0
-    react-dom: ^16.0.0 || ^17.0.0
-  checksum: dc8acbe216f70a60466d55d4f47c1468fecf074544a1e07234461b36eefed2b222f6e550c91e7ae02983e2842308d2a48ba8383029efb5d27ac749c48e3a09ae
+    react: ^16.0.0 || ^17.0.0 || ^18.0.0
+    react-dom: ^16.0.0 || ^17.0.0 || ^18.0.0
+  checksum: 55f4abad7f7523d16b081b5ab20f75c539a54a08253ce7e9df473d48386f42ceca6c31584ba9fa26e3528b498ef6685ec77fb9a22cffc97df05fb326d0bf1b26
   languageName: node
   linkType: hard
 
@@ -32209,7 +32271,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-smooth@npm:^2.0.0":
+"react-smooth@npm:^2.0.1":
   version: 2.0.1
   resolution: "react-smooth@npm:2.0.1"
   dependencies:
@@ -32545,9 +32607,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"recharts@npm:^2.0.0, recharts@npm:^2.1.5":
-  version: 2.1.9
-  resolution: "recharts@npm:2.1.9"
+"recharts@npm:^2.0.0, recharts@npm:^2.1.5, recharts@npm:^2.1.6":
+  version: 2.1.16
+  resolution: "recharts@npm:2.1.16"
   dependencies:
     "@types/d3-interpolate": ^2.0.0
     "@types/d3-scale": ^3.0.0
@@ -32559,14 +32621,15 @@ __metadata:
     eventemitter3: ^4.0.1
     lodash: ^4.17.19
     react-is: ^16.10.2
-    react-resize-detector: ^6.6.3
-    react-smooth: ^2.0.0
+    react-resize-detector: ^7.1.2
+    react-smooth: ^2.0.1
     recharts-scale: ^0.4.4
     reduce-css-calc: ^2.1.8
   peerDependencies:
-    react: ^16.0.0 || ^17.0.0
-    react-dom: ^16.0.0 || ^17.0.0
-  checksum: 5751ba78b08c9bf43b381750e302716df7ebc838a26bc8695892b1dd8293f858256d5b949defbb2d07395e7cf8873484b397ea804a60743e366e3211309c7433
+    prop-types: ^15.6.0
+    react: ^16.0.0 || ^17.0.0 || ^18.0.0
+    react-dom: ^16.0.0 || ^17.0.0 || ^18.0.0
+  checksum: 3ca97570e136da9f0383aa82a9aad6954307bda08b221e56c61e00e08185324c6660399bd5cdd609b79323725b68cd389b55ee0e039cfbedbe9f41858a2fec52
   languageName: node
   linkType: hard
 
@@ -33182,6 +33245,13 @@ __metadata:
   version: 1.3.0
   resolution: "rfdc@npm:1.3.0"
   checksum: fb2ba8512e43519983b4c61bd3fa77c0f410eff6bae68b08614437bc3f35f91362215f7b4a73cbda6f67330b5746ce07db5dd9850ad3edc91271ad6deea0df32
+  languageName: node
+  linkType: hard
+
+"rgb-hex@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "rgb-hex@npm:3.0.0"
+  checksum: 45959f777c9a078230cd20cdef2db159856ab74c1115ec6cb096801fdf223f533439d26555f2b39f2d9e1547f25588c6a3462dc19630a71dc090204b0d9e9d9f
   languageName: node
   linkType: hard
 
@@ -34794,6 +34864,20 @@ __metadata:
     char-regex: ^1.0.2
     strip-ansi: ^6.0.0
   checksum: 7bd3191668ddafa6f574a8b17a1bd1b085737d64ceefa51f72cdd19c45a730422cd70d984eee7584d6e5b5c84b6318633c6d6a720a4bfd7c58769985fa77573e
+  languageName: node
+  linkType: hard
+
+"string-to-color@npm:^2.2.2":
+  version: 2.2.2
+  resolution: "string-to-color@npm:2.2.2"
+  dependencies:
+    colornames: ^1.1.1
+    hex-rgb: ^4.1.0
+    lodash.padend: ^4.6.1
+    lodash.trimstart: ^4.5.1
+    lodash.words: ^4.2.0
+    rgb-hex: ^3.0.0
+  checksum: 9ffe859f387f5a2da30794ea4399d43b2f701acc2c0429f9aed9cce52f873f9ec40ad6b64eb5e5f030d602e38dca9a4b8f39f41c33d287b4b9d2043e4a513508
   languageName: node
   linkType: hard
 

@@ -19,6 +19,7 @@ metadata:
     # lighthouse.com/website-url: https://backstage.io
     opsgenie.com/team: 'Handi'
     opsgenie.com/component-selector: 'status:"open" and responders:"Handi"'
+    sonarqube.org/project-key: 'com.pointclickcare.ipc:ipc'
 spec:
   type: library
   owner: CNCF

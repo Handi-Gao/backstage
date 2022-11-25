@@ -354,7 +354,17 @@ const overviewContent = (
 
     <EntitySwitch>
       <EntitySwitch.Case if={isOpsgenieAvailable}>
-        <EntityOpsgenieAlertsCard title="OpsGenie — Alerts" />
+        <Grid item md={6}>
+          <EntityOpsgenieAlertsCard title="OpsGenie — Alerts" />
+        </Grid>
+      </EntitySwitch.Case>
+    </EntitySwitch>
+
+    <EntitySwitch>
+      <EntitySwitch.Case if={isOpsgenieOnCallListAvailable}>
+        <Grid item md={6}>
+          <EntityOpsgenieOnCallListCard title="OpsGenie Who Is On-Call" />
+        </Grid>
       </EntitySwitch.Case>
     </EntitySwitch>
 
@@ -377,20 +387,6 @@ const overviewContent = (
     <Grid item md={4} xs={12}>
       <EntityLinksCard />
     </Grid>
-
-    {cicdCard}
-
-    <EntitySwitch>
-      <EntitySwitch.Case if={isGithubInsightsAvailable}>
-        <Grid item md={6}>
-          <EntityGithubInsightsLanguagesCard />
-          <EntityGithubInsightsReleasesCard />
-        </Grid>
-        <Grid item md={6}>
-          <EntityGithubInsightsReadmeCard maxHeight={350} />
-        </Grid>
-      </EntitySwitch.Case>
-    </EntitySwitch>
 
     <EntitySwitch>
       <EntitySwitch.Case if={isLighthouseAvailable}>

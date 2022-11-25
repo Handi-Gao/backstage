@@ -123,6 +123,12 @@ proxy:
     target: https://api.opsgenie.com
     headers:
       Authorization: GenieKey ${OPSGENIE_API_KEY}
+
+sonarqube:
+  instances:
+    - name: default
+      baseUrl: https://sonarqube.pointclickcare.com
+      apiKey: ${SONARQUBE_TOKEN}
       
 opsgenie:
   # Use "domain: https://myorganization.app.eu.opsgenie.com/" for an EU account

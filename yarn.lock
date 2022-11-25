@@ -7227,7 +7227,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@backstage/plugin-sonarqube-backend@workspace:plugins/sonarqube-backend":
+"@backstage/plugin-sonarqube-backend@workspace:^, @backstage/plugin-sonarqube-backend@workspace:plugins/sonarqube-backend":
   version: 0.0.0-use.local
   resolution: "@backstage/plugin-sonarqube-backend@workspace:plugins/sonarqube-backend"
   dependencies:
@@ -7248,7 +7248,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@backstage/plugin-sonarqube@workspace:plugins/sonarqube":
+"@backstage/plugin-sonarqube@workspace:^, @backstage/plugin-sonarqube@workspace:plugins/sonarqube":
   version: 0.0.0-use.local
   resolution: "@backstage/plugin-sonarqube@workspace:plugins/sonarqube"
   dependencies:
@@ -21354,6 +21354,7 @@ __metadata:
     "@backstage/plugin-search-react": "workspace:^"
     "@backstage/plugin-sentry": "workspace:^"
     "@backstage/plugin-shortcuts": "workspace:^"
+    "@backstage/plugin-sonarqube": "workspace:^"
     "@backstage/plugin-stack-overflow": "workspace:^"
     "@backstage/plugin-tech-insights": "workspace:^"
     "@backstage/plugin-tech-radar": "workspace:^"
@@ -21450,6 +21451,7 @@ __metadata:
     "@backstage/plugin-search-backend-module-pg": "workspace:^"
     "@backstage/plugin-search-backend-node": "workspace:^"
     "@backstage/plugin-search-common": "workspace:^"
+    "@backstage/plugin-sonarqube-backend": "workspace:^"
     "@backstage/plugin-tech-insights-backend": "workspace:^"
     "@backstage/plugin-tech-insights-backend-module-jsonfc": "workspace:^"
     "@backstage/plugin-tech-insights-node": "workspace:^"

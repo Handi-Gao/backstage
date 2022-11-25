@@ -60,6 +60,7 @@ import badges from './plugins/badges';
 import jenkins from './plugins/jenkins';
 import permission from './plugins/permission';
 import playlist from './plugins/playlist';
+import sonarqube from './plugins/sonarqube';
 import { PluginEnvironment } from './types';
 import { ServerPermissionClient } from '@backstage/plugin-permission-node';
 import { DefaultIdentityClient } from '@backstage/plugin-auth-node';
@@ -142,6 +143,7 @@ async function main() {
     createEnv('tech-insights'),
   );
   const permissionEnv = useHotMemoize(module, () => createEnv('permission'));
+  const sonarqubeEnv = useHotMemoize(module, () => createEnv('sonarqube'));
   const playlistEnv = useHotMemoize(module, () => createEnv('playlist'));
   const eventsEnv = useHotMemoize(module, () => createEnv('events'));
 
@@ -171,6 +173,7 @@ async function main() {
   apiRouter.use('/badges', await badges(badgesEnv));
   apiRouter.use('/jenkins', await jenkins(jenkinsEnv));
   apiRouter.use('/permission', await permission(permissionEnv));
+  apiRouter.use('/sonarqube', await sonarqube(sonarqubeEnv));
   apiRouter.use('/playlist', await playlist(playlistEnv));
   apiRouter.use(notFoundHandler());
 

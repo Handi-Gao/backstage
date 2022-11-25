@@ -162,6 +162,7 @@ import {
   EntityOpsgenieOnCallListCard,
   isOpsgenieOnCallListAvailable,
 } from '@k-phoen/backstage-plugin-opsgenie';
+import { EntitySonarQubeCard } from '@backstage/plugin-sonarqube';
 
 const customEntityFilterKind = ['Component', 'API', 'System'];
 
@@ -386,6 +387,10 @@ const overviewContent = (
 
     <Grid item md={4} xs={12}>
       <EntityLinksCard />
+    </Grid>
+
+    <Grid item md={6}>
+      <EntitySonarQubeCard variant="gridItem" />
     </Grid>
 
     <EntitySwitch>
